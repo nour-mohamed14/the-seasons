@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>اتصل بنا</title>
+	<link rel="icon" href="./images/book-icon.ico" ></link>
+    <style>
+       body {
+    font-family: Arial, sans-serif;
+    direction: rtl;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color: #03346E;
+}
+
+header {
+    background-color: #021526;
+    color: white;
+    padding: 10px 0;
+}
+
+.menu {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;       /* مهم جدًا */
+    gap: 10px;             /* بدل margin */
+    font-size: 18px;
+}
+
+.menu li {
+    margin: 0;
+}
+
+.menu a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 15px;
+    display: block;
+    border-radius: 5px;
+}
+
+.menu a:hover {
+    background-color: #6EACDA;
+}
+
+main {
+    flex: 1;
+    padding: 20px;
+}
+
+section {
+    margin: 20px;
+    background-color: white;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0,0,0,.1);
+}
+
+footer {
+    background-color: #021526;
+    color: #FFFCFB;
+    text-align: center;
+    padding: 15px;
+}
+
+.section-header {
+    color: #0118D8;
+    font-size: 26px;
+    margin-bottom: 10px;
+    line-height: 1.8;
+}
+
+/* الصور */
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* الموبايل */
+@media (max-width:768px){
+
+    .menu{
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .menu li{
+        width: 100%;
+    }
+
+    .menu a{
+        text-align: center;
+        border-bottom: 1px solid rgba(255,255,255,.2);
+    }
+
+    .section-header{
+        font-size: 20px;
+    }
+
+    section{
+        margin: 10px;
+        padding: 15px;
+    }
+
+    main{
+        padding: 10px;
+    }
+
+}
+
+.table-responsive{
+    width:100%;
+    overflow-x:auto;
+    -webkit-overflow-scrolling:touch;
+}
+
+.table-responsive table{
+    width:100%;
+    border-collapse:collapse;
+}
+
+
+
+/* ===========================
+   Contact Box
+=========================== */
+/* توسيط المحتوى */
+
+main{
+    flex:1;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    padding:20px;
+}
+
+/* صندوق التواصل */
+
+.contact-box{
+    width:100%;
+    max-width:450px;
+    background:#fff;
+    border:1px solid #ccc;
+    border-radius:10px;
+    padding:25px;
+    box-shadow:0 0 15px rgba(0,0,0,.15);
+    text-align:center;
+}
+
+/* العنوان */
+
+.contact-box h2{
+    color:#003d9d;
+    font-size:28px;
+    margin-bottom:20px;
+}
+
+/* العناوين */
+
+.contact-box label{
+    display:block;
+    text-align:center;
+    color:#003d9d;
+    font-weight:bold;
+    margin-bottom:8px;
+    font-size:22px;
+}
+/* حقول الإدخال */
+
+.contact-box input,
+.contact-box textarea{
+    width:100%;
+    padding:12px;
+    margin-bottom:15px;
+    border:1px solid #ccc;
+    border-radius:6px;
+    font-size:16px;
+    box-sizing:border-box;
+}
+
+.contact-box textarea{
+    min-height:120px;
+    resize:vertical;
+}
+
+/* الزر */
+
+.contact-box button{
+    width:100%;
+    background:#003d9d;
+    color:#fff;
+    border:none;
+    padding:12px;
+    font-size:17px;
+    border-radius:6px;
+    cursor:pointer;
+    transition:.3s;
+}
+
+.contact-box button:hover{
+    background:#0055d4;
+}
+
+/* الموبايل */
+
+@media (max-width:768px){
+
+    main{
+        padding:15px;
+    }
+
+    .contact-box{
+        max-width:100%;
+        padding:20px;
+    }
+
+    .contact-box h2{
+        font-size:24px;
+    }
+
+    .contact-box input,
+    .contact-box textarea,
+    .contact-box button{
+        font-size:15px;
+    }
+
+}
+                
+    </style>
+
+
+                
+
+</head>
+<body>
+
+<header>
+    <nav>
+        <ul class="menu">
+                        <li><a href="index.html">الصفحة الرئيسية</a></li>
+			<li><a href="الربيع.html">الربيع </a></li>
+			<li><a href="الصيف.html">الصيف </a></li>
+			<li><a href="الخريف.html">الخريف </a></li>
+			<li><a href="الشتاء.html">الشتاء </a></li>
+                       <li><a href="contactus.html">اتصل بنا</a></li>
+        </ul>
+    </nav>
+</header>
+
+
+<main>
+   <div class="contact-box">
+   <h2>اتصل بنا</h2>
+    <form>
+    <label>الاسم:</label>
+
+    <input type="text" required>
+    
+    <label>البريد الاكترونى:</label>
+    <input type="text" required>
+    
+    <label for="message">الرسالة:</label>
+    <textarea rows="6" required></textarea>
+    
+    <button type="submit">ارسال</button>
+</form>
+</div>
+</main>
+<footer>
+      <b><u><p>Design by Nour Mohammed
+</p></u></b>
+</footer>
